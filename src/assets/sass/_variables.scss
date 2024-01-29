@@ -1,0 +1,12 @@
+$rootBackground: rgb(248 249 255);
+$blue: #6fb6f8;
+$xsBreakpoint: 480px;
+$smBreakpoint: 768px;
+$mdBreakpoint: 1024px;
+$lgBreakpoint: 1440px;
+
+@mixin myFont($size, $weight, $color) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
