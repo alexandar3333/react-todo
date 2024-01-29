@@ -4,9 +4,10 @@
   font-family: Inter;
   line-height: 1.5;
   font-weight: 400;
-
+  display: flex;
+  justify-content: center;
   color-scheme: light dark;
-  background-color: $rootBackground;
+  background-color: whitesmoke
 }
 body {
   margin: 0;
