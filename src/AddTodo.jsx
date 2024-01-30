@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import './assets/sass/AddTodo.scss'
 
 const AddTodo = ({ todos, setTodos }) => {
-  const [newTodo, setNewTodo] = useState({ todoName: '', expirationDate: '' });
+  const [newTodo, setNewTodo] = useState({ description: '', expiringDate: '' });
   const navigate = useNavigate();
 
   const handleInputChange = (e) => {
@@ -14,45 +14,48 @@ const AddTodo = ({ todos, setTodos }) => {
   const handleAddTodo = (e) => {
     e.preventDefault();
 
-    if (newTodo.todoName.trim() === '' || newTodo.expirationDate.trim() === '') {
+    if (newTodo.description.trim() === '' || newTodo.expiringDate.trim() === '') {
       alert('Please enter both todo name and expiration date.');
       return;
     }
 
     const todoToAdd = {
       id: todos.length + 1,
-      description: newTodo.todoName,
-      expiringDate: newTodo.expirationDate,
+      description: newTodo.description,
+      expiringDate: newTodo.expiringDate,
       completed: false,
-      creationDate: new Date().toISOString(),
+      creationDate: new Date()
     };
 
     setTodos((prevTodos) => [...prevTodos, todoToAdd]);
-    setNewTodo({ todoName: '', expirationDate: '' });
+    setNewTodo({ description: '', expiringDate: '' });
   };
 
   return (
     <>
-    <button onClick={()=> navigate("/")}>View Todos</button>
-      <form className="addForm" onSubmit={handleAddTodo}>
-        <label>
+    <button class="nav-btn" onClick={()=> navigate("/")}>View Todos</button>
+      <form className="form addForm" onSubmit={handleAddTodo}>
+        <label for="add-description">
           Todo Name:
+        </label>
           <input
+            id="add-description"
             type="text"
-            name="todoName"
-            value={newTodo.todoName}
+            name="description"
+            value={newTodo.description}
             onChange={handleInputChange}
           />
-        </label>
-        <label>
+        <label for="add-date">
           Expiration Date:
-          <input
+        </label>
+        <input
+            id="add-date"
             type="date"
-            name="expirationDate"
-            value={newTodo.expirationDate}
+            name="expiringDate"
+            value={newTodo.expiringDate}
             onChange={handleInputChange}
           />
-        </label>
+          
         <button type="submit">Add Todo</button>
       </form>
     </>

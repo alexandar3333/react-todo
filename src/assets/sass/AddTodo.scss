@@ -1,4 +1,14 @@
-.addForm{
+.form{
    display: flex;
    flex-direction: column;
+   width: 25rem;
+   gap: 1rem;
+   padding: 1rem;
+   margin: 1rem;
+}
+.form > input {
+   width: 100%;
+   padding: 12px 12px;
+   margin: 8px 0;
+   box-sizing: border-box;
 }

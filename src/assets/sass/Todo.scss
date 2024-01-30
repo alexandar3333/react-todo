@@ -1,18 +1,40 @@
-.completed-todo{
+@use "variables" as *;
+
+.completed-todo {
     text-decoration: line-through;
 }
-.todo{
+
+.todo-container {
+    border-radius: 15px;
+    background-color: $todoBackground;
+    padding: 1rem;
+    width: 50rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    flex-direction: column;
+    margin: 1rem
+}
+
+.todo {
     display: flex;
     flex-direction: row;
-    width: 25rem;
+    width: 99%;
     justify-content: space-between;
+    background-color: $white;
+    border-radius: 10px;
+    padding: 0.5rem;
 }
-.todo > div{
+
+.todo>div {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap:.5rem
+    gap: .5rem
 }
-svg{
+
+svg {
     width: 1rem;
 }
+

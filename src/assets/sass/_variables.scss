@@ -1,12 +1,6 @@
 $rootBackground: rgb(248 249 255);
+$purple:hsl(234.55deg 83.63% 66.47%);
 $blue: #6fb6f8;
-$xsBreakpoint: 480px;
-$smBreakpoint: 768px;
-$mdBreakpoint: 1024px;
-$lgBreakpoint: 1440px;
-
-@mixin myFont($size, $weight, $color) {
-  font-size: $size;
-  font-weight: $weight;
-  color: $color;
-}
+$whitesmoke: #f5f5f5;
+$todoBackground: rgb(236, 237, 246);
+$white: #ffffff;

@@ -7,7 +7,7 @@
   display: flex;
   justify-content: center;
   color-scheme: light dark;
-  background-color: whitesmoke
+  background-color: $whitesmoke
 }
 body {
   margin: 0;
@@ -20,6 +20,7 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+  text-align: center;
 }
 
 button {
@@ -31,4 +32,9 @@ button {
   font-family: inherit;
   cursor: pointer;
 }
-
+.nav-btn{
+  background-color: $purple;
+}
+.main{
+  margin: 0 auto;
+}

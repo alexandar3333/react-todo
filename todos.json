@@ -1,24 +1,23 @@
 [
-    {
-      "id": 1,
-      "description": "Create a React project",
-      "completed": false,
-      "expiringDate": "2024-12-31T23:59:59.999Z",
-      "creationDate": "2024-01-01T12:00:00.000Z"
-    },
-    {
-      "id": 2,
-      "description": "Learn React",
-      "completed": true,
-      "expiringDate": "2024-02-28T23:59:59.999Z",
-      "creationDate": "2024-01-15T10:30:00.000Z"
-    },
-    {
-      "id": 3,
-      "description": "Create a todo app",
-      "completed": false,
-      "expiringDate": "2024-03-15T23:59:59.999Z",
-      "creationDate": "2024-02-01T15:45:00.000Z"
-    }
+  {
+    "id": 1,
+    "description": "Create a React project",
+    "completed": false,
+    "expiringDate": "2024-12-31",
+    "creationDate": "2024-01-01"
+  },
+  {
+    "id": 2,
+    "description": "Learn React",
+    "completed": true,
+    "expiringDate": "2024-02-28",
+    "creationDate": "2024-01-15"
+  },
+  {
+    "id": 3,
+    "description": "Create a todo app",
+    "completed": false,
+    "expiringDate": "2024-03-15",
+    "creationDate": "2024-02-01"
+  }
 ]
-  
