@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './assets/sass/AddTodo.scss'
 
 const AddTodo = ({ todos, setTodos }) => {
   const [newTodo, setNewTodo] = useState({ todoName: '', expirationDate: '' });
+  const navigate = useNavigate();
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
@@ -30,6 +32,8 @@ const AddTodo = ({ todos, setTodos }) => {
   };
 
   return (
+    <>
+    <button onClick={()=> navigate("/")}>View Todos</button>
       <form className="addForm" onSubmit={handleAddTodo}>
         <label>
           Todo Name:
@@ -51,6 +55,7 @@ const AddTodo = ({ todos, setTodos }) => {
         </label>
         <button type="submit">Add Todo</button>
       </form>
+    </>
   );
 };
 
